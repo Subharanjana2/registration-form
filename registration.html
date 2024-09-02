@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Hospital - Patient Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Patient Registration Form</h2>
+        <form id="registrationForm" onsubmit="return validateForm()">
+            <!-- Name -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Gender -->
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="" disabled selected>Select your gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <!-- Phone Number -->
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" required>
+
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Address -->
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+
+            <!-- City -->
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+
+            <!-- State -->
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required>
+
+            <!-- Country -->
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" required>
+
+            <!-- Pincode -->
+            <label for="pincode">Pincode:</label>
+            <input type="text" id="pincode" name="pincode" required>
+
+            <!-- Date of Birth -->
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <!-- Password -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <!-- Confirm Password -->
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+
+            <!-- Emergency Contact Phone -->
+            <label for="emergencyContactPhone">Emergency Contact Phone:</label>
+            <input type="text" id="emergencyContactPhone" name="emergencyContactPhone" required>
+
+            <!-- File Upload -->
+            <label for="medicalFile">Upload Medical Records:</label>
+            <input type="file" id="medicalFile" name="medicalFile" required>
+
+            <!-- Photo Upload (if required) -->
+            <label for="photo">Upload Photo:</label>
+            <input type="file" id="photo" name="photo" required>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Register">
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

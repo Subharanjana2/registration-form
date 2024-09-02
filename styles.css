@@ -1,0 +1,182 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('1591552318515.png'); /* Full background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+}
+
+/* Styles for the welcome page */
+.welcome-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('1591552318515.png'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the background fixed when scrolling */
+    color: black; /* Set text color to black */
+    text-align: center;
+    flex-direction: column;
+}
+
+.welcome-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.welcome-text {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.welcome-text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: black; /* Set h1 color to black */
+}
+
+.welcome-text p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: black; /* Set paragraph text color to black */
+}
+
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Styles for the registration page */
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+/* Label styling */
+form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input fields styling */
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="password"],
+form input[type="file"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+/* Textarea specific styling */
+form textarea {
+    resize: vertical;
+}
+
+/* Input fields hover and focus effects */
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="date"]:focus,
+form input[type="password"]:focus,
+form input[type="file"]:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Styling for select box */
+select {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="gray" d="M2 0L0 2h4z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px;
+}
+
+/* Styling for the container holding the dropdown */
+.gender-options {
+    margin-bottom: 20px;
+}
+
+/* Submit button styling */
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: black;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+/* Submit button hover effect */
+form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Checkbox styling */
+form input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    form input[type="submit"] {
+        font-size: 16px;
+    }
+}
